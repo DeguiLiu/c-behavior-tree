@@ -1,7 +1,7 @@
 # C Behavior Tree
 
-这是一个精简且可移植的行为树（Behavior Tree, BT）核心实现和演示。
-本仓库包含核心实现、测试套件与一个 POSIX 示例程序，用于演示黑板（blackboard）、user_data、on_enter/on_exit 钩子与时间锚（time anchor）等用法。
+c-behavior-tree是一个简单的行为树（Behavior Tree, BT）实现。
+本仓库也包含一个 POSIX 示例程序，用于演示黑板（blackboard）、user_data、on_enter/on_exit 钩子与时间锚（time anchor）等。
 
 目录
 
@@ -85,7 +85,7 @@ API 使用（简要）
 
 示例行为树
 
-下面以示例程序 `bt_example_posix.c` 中使用的树为例：
+示例程序 `bt_example_posix.c` ：
 
 ```mermaid
 flowchart TD
@@ -145,7 +145,6 @@ gcc -std=c11 -O2 -Wall bt_example_posix.c c-behavior-tree.c -o bt_demo
 ./bt_demo
 ```
 
-- 构建测试套件：
 
 ```sh
 gcc -std=c11 -O2 -Wall test_c-behavior-tree.c c-behavior-tree.c -o bt_test
