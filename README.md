@@ -12,12 +12,11 @@ c-behavior-tree是一个简单的行为树（Behavior Tree, BT）实现。
 
 设计要点
 
-- 轻量、无动态分配：节点由调用者静态分配或在栈上创建并手动连线。
-- 单次 tick 驱动：用户通过 `bt_tick(root)` 对树进行一次推进（类似游戏/控制循环中的一次帧更新）。
+- 轻量、无动态分配：节点由调用者静态分配或在栈上创建。
+- 单次 tick 驱动：用户通过 `bt_tick(root)` 对树进行一次推进。
 - 支持黑板与每节点 user_data，用于共享和定制行为参数。
-- 支持可选的 on_enter/on_exit 钩子和 time_anchor_ms（用于装饰器或延时逻辑）。
 
-核心概念回顾（来自 `c-behavior-tree.h`/`.c`）
+核心概念
 
 - 状态（bt_status_t）：
   - `BT_SUCCESS` (0)
