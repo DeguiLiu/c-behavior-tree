@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/examples/bt_example_posix.c" "CMakeFiles/bt_example_posix.dir/examples/bt_example_posix.c.o" "gcc" "CMakeFiles/bt_example_posix.dir/examples/bt_example_posix.c.o.d"
-  "/home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/src/bt.c" "CMakeFiles/bt_example_posix.dir/src/bt.c.o" "gcc" "CMakeFiles/bt_example_posix.dir/src/bt.c.o.d"
+  "/tmp/c-behavior-tree/examples/bt_example_posix.c" "CMakeFiles/bt_example_posix.dir/examples/bt_example_posix.c.o" "gcc" "CMakeFiles/bt_example_posix.dir/examples/bt_example_posix.c.o.d"
+  "/tmp/c-behavior-tree/src/bt.c" "CMakeFiles/bt_example_posix.dir/src/bt.c.o" "gcc" "CMakeFiles/bt_example_posix.dir/src/bt.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

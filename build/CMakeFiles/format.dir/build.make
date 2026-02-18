@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree
+CMAKE_SOURCE_DIR = /tmp/c-behavior-tree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build
+CMAKE_BINARY_DIR = /tmp/c-behavior-tree/build
 
 # Utility rule file for format.
 
@@ -67,7 +67,7 @@ include CMakeFiles/format.dir/compiler_depend.make
 include CMakeFiles/format.dir/progress.make
 
 CMakeFiles/format:
-	cd /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree && /home/deguiliu/.local/bin/clang-format -i include/*.h src/*.c tests/*.c examples/*.c
+	cd /tmp/c-behavior-tree && /home/deguiliu/.local/bin/clang-format -i include/*.h src/*.c tests/*.c examples/*.c
 
 format: CMakeFiles/format
 format: CMakeFiles/format.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/format.dir/clean:
 .PHONY : CMakeFiles/format.dir/clean
 
 CMakeFiles/format.dir/depend:
-	cd /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build/CMakeFiles/format.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /tmp/c-behavior-tree/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/c-behavior-tree /tmp/c-behavior-tree /tmp/c-behavior-tree/build /tmp/c-behavior-tree/build /tmp/c-behavior-tree/build/CMakeFiles/format.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/format.dir/depend
 

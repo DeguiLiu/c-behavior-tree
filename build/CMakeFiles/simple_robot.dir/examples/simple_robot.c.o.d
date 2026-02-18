@@ -1,6 +1,6 @@
 CMakeFiles/simple_robot.dir/examples/simple_robot.c.o: \
- /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/examples/simple_robot.c \
- /usr/include/stdc-predef.h /usr/include/stdio.h \
+ /tmp/c-behavior-tree/examples/simple_robot.c /usr/include/stdc-predef.h \
+ /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -24,10 +24,7 @@ CMakeFiles/simple_robot.dir/examples/simple_robot.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/include/bt.h \
+ /tmp/c-behavior-tree/include/bt.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \

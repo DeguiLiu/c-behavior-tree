@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree
+CMAKE_SOURCE_DIR = /tmp/c-behavior-tree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build
+CMAKE_BINARY_DIR = /tmp/c-behavior-tree/build
 
 # Utility rule file for cppcheck.
 
@@ -67,7 +67,7 @@ include CMakeFiles/cppcheck.dir/compiler_depend.make
 include CMakeFiles/cppcheck.dir/progress.make
 
 CMakeFiles/cppcheck:
-	cd /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree && /usr/bin/cppcheck --enable=all --suppress=missingIncludeSystem include/ src/ tests/ examples/
+	cd /tmp/c-behavior-tree && /usr/bin/cppcheck --enable=all --suppress=missingIncludeSystem include/ src/ tests/ examples/
 
 cppcheck: CMakeFiles/cppcheck
 cppcheck: CMakeFiles/cppcheck.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/cppcheck.dir/clean:
 .PHONY : CMakeFiles/cppcheck.dir/clean
 
 CMakeFiles/cppcheck.dir/depend:
-	cd /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build/CMakeFiles/cppcheck.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /tmp/c-behavior-tree/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/c-behavior-tree /tmp/c-behavior-tree /tmp/c-behavior-tree/build /tmp/c-behavior-tree/build /tmp/c-behavior-tree/build/CMakeFiles/cppcheck.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/cppcheck.dir/depend
 

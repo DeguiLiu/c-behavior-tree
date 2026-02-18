@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/examples/simple_robot.c" "CMakeFiles/simple_robot.dir/examples/simple_robot.c.o" "gcc" "CMakeFiles/simple_robot.dir/examples/simple_robot.c.o.d"
-  "/home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/src/bt.c" "CMakeFiles/simple_robot.dir/src/bt.c.o" "gcc" "CMakeFiles/simple_robot.dir/src/bt.c.o.d"
+  "/tmp/c-behavior-tree/examples/simple_robot.c" "CMakeFiles/simple_robot.dir/examples/simple_robot.c.o" "gcc" "CMakeFiles/simple_robot.dir/examples/simple_robot.c.o.d"
+  "/tmp/c-behavior-tree/src/bt.c" "CMakeFiles/simple_robot.dir/src/bt.c.o" "gcc" "CMakeFiles/simple_robot.dir/src/bt.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

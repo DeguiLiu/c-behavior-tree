@@ -1,7 +1,5 @@
-CMakeFiles/state_machine.dir/src/bt.c.o: \
- /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/src/bt.c \
- /usr/include/stdc-predef.h \
- /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/include/bt.h \
+CMakeFiles/state_machine.dir/src/bt.c.o: /tmp/c-behavior-tree/src/bt.c \
+ /usr/include/stdc-predef.h /tmp/c-behavior-tree/include/bt.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

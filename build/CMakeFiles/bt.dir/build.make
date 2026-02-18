@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree
+CMAKE_SOURCE_DIR = /tmp/c-behavior-tree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build
+CMAKE_BINARY_DIR = /tmp/c-behavior-tree/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bt.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/bt.dir/progress.make
 include CMakeFiles/bt.dir/flags.make
 
 CMakeFiles/bt.dir/src/bt.c.o: CMakeFiles/bt.dir/flags.make
-CMakeFiles/bt.dir/src/bt.c.o: /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/src/bt.c
+CMakeFiles/bt.dir/src/bt.c.o: /tmp/c-behavior-tree/src/bt.c
 CMakeFiles/bt.dir/src/bt.c.o: CMakeFiles/bt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bt.dir/src/bt.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bt.dir/src/bt.c.o -MF CMakeFiles/bt.dir/src/bt.c.o.d -o CMakeFiles/bt.dir/src/bt.c.o -c /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/src/bt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/tmp/c-behavior-tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bt.dir/src/bt.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bt.dir/src/bt.c.o -MF CMakeFiles/bt.dir/src/bt.c.o.d -o CMakeFiles/bt.dir/src/bt.c.o -c /tmp/c-behavior-tree/src/bt.c
 
 CMakeFiles/bt.dir/src/bt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bt.dir/src/bt.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/src/bt.c > CMakeFiles/bt.dir/src/bt.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/c-behavior-tree/src/bt.c > CMakeFiles/bt.dir/src/bt.c.i
 
 CMakeFiles/bt.dir/src/bt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bt.dir/src/bt.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/src/bt.c -o CMakeFiles/bt.dir/src/bt.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/c-behavior-tree/src/bt.c -o CMakeFiles/bt.dir/src/bt.c.s
 
 # Object files for target bt
 bt_OBJECTS = \
@@ -93,7 +93,7 @@ bt_EXTERNAL_OBJECTS =
 libbt.a: CMakeFiles/bt.dir/src/bt.c.o
 libbt.a: CMakeFiles/bt.dir/build.make
 libbt.a: CMakeFiles/bt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libbt.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/tmp/c-behavior-tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libbt.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/bt.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bt.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/bt.dir/clean:
 .PHONY : CMakeFiles/bt.dir/clean
 
 CMakeFiles/bt.dir/depend:
-	cd /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build /home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/build/CMakeFiles/bt.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /tmp/c-behavior-tree/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/c-behavior-tree /tmp/c-behavior-tree /tmp/c-behavior-tree/build /tmp/c-behavior-tree/build /tmp/c-behavior-tree/build/CMakeFiles/bt.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/bt.dir/depend
 

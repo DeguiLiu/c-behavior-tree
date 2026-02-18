@@ -1,0 +1,32 @@
+Start testing: Feb 18 20:35 CST
+----------------------------------------------------------
+1/1 Testing: bt_test
+1/1 Test: bt_test
+Command: "/tmp/c-behavior-tree/build/bt_test"
+Directory: /tmp/c-behavior-tree/build
+"bt_test" start time: Feb 18 20:35 CST
+Output:
+----------------------------------------------------------
+
+=== c-behavior-tree POSIX Test Runner ===
+Running all tests...
+
+=== Behavior Tree Test Suite (6 cases) ===
+[PASS] Basic Sequence (Basic SEQUENCE + SELECTOR flow) in 0 ticks
+[PASS] Selector (SELECTOR semantics) in 0 ticks
+[PASS] Inverter (INVERTER semantics) in 0 ticks
+[PASS] Error Cases (Invalid usage handling) in 0 ticks
+[PASS] Stress (Repeated ticks under variation) in 9 ticks
+[PERF] cycles=1000, successes=500, ticks=0
+[PASS] Performance (Throughput of simple SEQUENCE) in 0 ticks
+=== End of BT Test Suite ===
+All tests finished.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"bt_test" end time: Feb 18 20:35 CST
+"bt_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 18 20:35 CST

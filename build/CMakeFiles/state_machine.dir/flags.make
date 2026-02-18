@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/deguiliu/test/streaming-arch-demo/refs/c-behavior-tree/include
+C_INCLUDES = -I/tmp/c-behavior-tree/include
 
-C_FLAGS =  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG -std=gnu11
+C_FLAGS =  -Wall -Wextra -Werror -pedantic -g -std=gnu11
 
