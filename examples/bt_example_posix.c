@@ -25,7 +25,7 @@
  *  - After recharge, battery is full and the loop repeats.
  */
 
-#include "c-behavior-tree.h"
+#include "bt.h"
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/time.h>

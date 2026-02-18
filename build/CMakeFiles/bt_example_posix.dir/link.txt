@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/bt_example_posix.dir/examples/bt_example_posix.c.o CMakeFiles/bt_example_posix.dir/src/bt.c.o -o bt_example_posix 

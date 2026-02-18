@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG "CMakeFiles/bt_test.dir/tests/test_c-behavior-tree.c.o" CMakeFiles/bt_test.dir/src/bt.c.o -o bt_test 

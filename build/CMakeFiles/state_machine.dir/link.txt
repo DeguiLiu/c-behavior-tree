@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -Werror -pedantic -O3 -DNDEBUG CMakeFiles/state_machine.dir/examples/state_machine.c.o CMakeFiles/state_machine.dir/src/bt.c.o -o state_machine 

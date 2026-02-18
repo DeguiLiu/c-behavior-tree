@@ -8,7 +8,7 @@
  *   bt_bt_status
  */
 
-#include "c-behavior-tree.h"
+#include "bt.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

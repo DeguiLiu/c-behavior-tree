@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbt.a CMakeFiles/bt.dir/src/bt.c.o
+/usr/bin/ranlib libbt.a

@@ -8,7 +8,7 @@
  * allocation; users create nodes and wire the tree manually.
  */
 
-#include "c-behavior-tree.h"
+#include "bt.h"
 
 /* ===== Internal constants ===== */
 #define UINT16_ZERO       ((uint16_t)0)
