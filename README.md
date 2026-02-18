@@ -1,5 +1,8 @@
 # C Behavior Tree
 
+[![CI](https://github.com/DeguiLiu/c-behavior-tree/actions/workflows/ci.yml/badge.svg)](https://github.com/DeguiLiu/c-behavior-tree/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 c-behavior-tree是一个简单的行为树（Behavior Tree, BT）实现。
 本仓库也包含一个 POSIX 示例程序，用于演示黑板（blackboard）、user_data、on_enter/on_exit 钩子与时间锚（time anchor）等。
 

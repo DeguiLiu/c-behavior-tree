@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        build_type: [Debug, Release]
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake clang-format clang-tidy cppcheck
+
+    - name: Configure CMake
+      run: |
+        cmake -B build \
+          -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} \
+          -DCMAKE_C_COMPILER=gcc \
+          -DCMAKE_CXX_COMPILER=g++
+
+    - name: Build
+      run: cmake --build build -j$(nproc)
+
+    - name: Run tests
+      run: cd build && ctest --output-on-failure
+
+    - name: Check clang-format
+      run: |
+        find include src tests examples -name '*.h' -o -name '*.c' | \
+          xargs clang-format --dry-run --Werror
+
+    - name: Run cpplint
+      run: |
+        find include src tests examples -name '*.h' -o -name '*.c' | \
+          xargs cpplint --filter=-legal/copyright || true
+
+    - name: Run cppcheck
+      run: |
+        cppcheck --enable=all --suppress=missingIncludeSystem \
+          include/ src/ tests/ examples/ || true
