@@ -1,1 +1,0 @@
-/usr/bin/cc  -Wall -Wextra -Werror -pedantic -g CMakeFiles/simple_robot.dir/examples/simple_robot.c.o CMakeFiles/simple_robot.dir/src/bt.c.o -o simple_robot 
