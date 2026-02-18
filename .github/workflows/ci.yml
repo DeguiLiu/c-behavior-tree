@@ -33,13 +33,13 @@ jobs:
 
     - name: Check clang-format
       run: |
-        find include src tests examples -name '*.h' -o -name '*.c' | \
-          xargs -d '\n' clang-format --dry-run --Werror
+        find include src tests examples \( -name '*.h' -o -name '*.c' \) -print0 | \
+          xargs -0 clang-format --dry-run --Werror
 
     - name: Run cpplint
       run: |
-        find include src tests examples -name '*.h' -o -name '*.c' | \
-          xargs -d '\n' cpplint --filter=-legal/copyright || true
+        find include src tests examples \( -name '*.h' -o -name '*.c' \) -print0 | \
+          xargs -0 cpplint --filter=-legal/copyright || true
 
     - name: Run cppcheck
       run: |
